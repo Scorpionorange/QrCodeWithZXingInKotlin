@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="#fff"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:gravity="center"
+        android:hint="输入内容"
+        android:singleLine="true"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/testingOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生成二维码"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/qrCodeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="qrCodeImage"
+        android:scaleType="fitCenter"/>
+
+    <Button
+        android:id="@+id/autoTimeStamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自动时间戳"
+        android:gravity="center"/>
+
+</LinearLayout>
